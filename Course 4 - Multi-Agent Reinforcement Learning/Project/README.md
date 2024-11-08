@@ -83,7 +83,7 @@ For this project, you will not need to install Unity - this is because we have a
 
 ### Step 3: Explore the Environment
 
-After you have followed the instructions above, open `Tennis.ipynb.ipynb` (located in the folder in the course 4 GitHub repository) and follow the instructions to learn how to use the Python API to control the agent.
+After you have followed the instructions above, open `Tennis.ipynb` (located in the folder in the course 4 GitHub repository) and follow the instructions to learn how to use the Python API to control the agent.
 
 # Report
 
