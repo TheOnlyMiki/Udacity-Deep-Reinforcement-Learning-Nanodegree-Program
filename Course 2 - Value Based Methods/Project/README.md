@@ -105,33 +105,35 @@ After you have followed the instructions above, open `Navigation.ipynb` (located
 
 #### - Hyperparameters:
 ```
-  - eps_start = 1.0     # epsilon starting value
-  - eps_end = 0.01     # epsilon minimum value
-  - eps_decay = 0.995    # epsilon discount coefficient
-  - BUFFER_SIZE = int(1e5) # replay buffer size
-  - BATCH_SIZE = 64     # minibatch size
-  - GAMMA = 0.99      # discount factor
-  - TAU = 1e-3       # for soft update of target parameters
-  - LR = 5e-4        # learning rate
-  - UPDATE_EVERY = 4    # how often to update the networ
+- eps_start = 1.0     # epsilon starting value
+- eps_end = 0.01     # epsilon minimum value
+- eps_decay = 0.995    # epsilon discount coefficient
+- BUFFER_SIZE = int(1e5) # replay buffer size
+- BATCH_SIZE = 64     # minibatch size
+- GAMMA = 0.99      # discount factor
+- TAU = 1e-3       # for soft update of target parameters
+- LR = 5e-4        # learning rate
+- UPDATE_EVERY = 4    # how often to update the networ
 ```
 #### - Deep Q Network:
 ```
-  1. Fully Connected Layer with ReLu Activation Function = 37 -> 64
-  2. Fully Connected Layer with ReLu Activation Function = 64 -> 64
-  3. Fully Connected Layer = 64 -> 4
+1. Fully Connected Layer with ReLu Activation Function = 37 -> 64
+2. Fully Connected Layer with ReLu Activation Function = 64 -> 64
+3. Fully Connected Layer = 64 -> 4
 ```
 #### - Dueling Deep Q Network:
 ```
-  1. Fully Connected Layer with ReLu Activation Function = 37 -> 64
-  2. Two of Fully Connected Layer with ReLu Activation Function = 64 -> 256
-  3. Two of Fully Connected Layer:
-     3.1 Value of State - Fully Connected Layer = 256 -> 1
-     3.2 Advantage Actions - Fully Connected Layer = 256 -> 4
-  4. Computing the Average of Advantage Actions
-  5. Q Values = Value of State + Advantage Actions - Average of Advantage Actions
+1. Fully Connected Layer with ReLu Activation Function = 37 -> 64
+2. Two of Fully Connected Layer with ReLu Activation Function = 64 -> 256
+3. Two of Fully Connected Layer:
+  3.1 Value of State - Fully Connected Layer = 256 -> 1
+  3.2 Advantage Actions - Fully Connected Layer = 256 -> 4
+4. Computing the Average of Advantage Actions
+5. Q Values = Value of State + Advantage Actions - Average of Advantage Actions
 ```
 ### Plot of Rewards
+
+The agent must get an average score of +13 over 100 consecutive episodes.
 
 - `DQN.png` - Episode 527, Average Score: 13.03, Environment solved in 427 episodes.
 
