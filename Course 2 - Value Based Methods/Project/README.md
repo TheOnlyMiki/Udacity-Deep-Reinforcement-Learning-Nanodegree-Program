@@ -72,7 +72,7 @@ To set up your python environment to run the code in this repository, follow the
 
 6. Before running code in a notebook, change the kernel to match the `drlnd` environment by using the drop-down `Kernel` menu. 
 
-![Kernel][images/kernel.png]
+<img src="images/kernel.png"/>
 
 (For Windows users) The ML-Agents toolkit supports Windows 10. While it might be possible to run the ML-Agents toolkit using other versions of Windows, it has not been tested on other versions. Furthermore, the ML-Agents toolkit has not been tested on a Windows VM such as Bootcamp or Parallels.
 
@@ -104,6 +104,7 @@ After you have followed the instructions above, open `Navigation.ipynb` (located
 ### Learning Algorithm
 
 #### - Hyperparameters:
+```
   - eps_start = 1.0     # epsilon starting value
   - eps_end = 0.01     # epsilon minimum value
   - eps_decay = 0.995    # epsilon discount coefficient
@@ -113,27 +114,29 @@ After you have followed the instructions above, open `Navigation.ipynb` (located
   - TAU = 1e-3       # for soft update of target parameters
   - LR = 5e-4        # learning rate
   - UPDATE_EVERY = 4    # how often to update the networ
-
+```
 #### - Deep Q Network:
+```
   1. Fully Connected Layer with ReLu Activation Function = 37 -> 64
   2. Fully Connected Layer with ReLu Activation Function = 64 -> 64
   3. Fully Connected Layer = 64 -> 4
-
+```
 #### - Dueling Deep Q Network:
+```
   1. Fully Connected Layer with ReLu Activation Function = 37 -> 64
   2. Two of Fully Connected Layer with ReLu Activation Function = 64 -> 256
   3. Two of Fully Connected Layer:
-    3.1 Value of State - Fully Connected Layer = 256 -> 1
-    3.2 Advantage Actions - Fully Connected Layer = 256 -> 4
+     3.1 Value of State - Fully Connected Layer = 256 -> 1
+     3.2 Advantage Actions - Fully Connected Layer = 256 -> 4
   4. Computing the Average of Advantage Actions
   5. Q Values = Value of State + Advantage Actions - Average of Advantage Actions
-
+```
 ### Plot of Rewards
 
 - `DQN.png` - Episode 527, Average Score: 13.03, Environment solved in 427 episodes.
 
-![reward1][DQN.png]
+<img src="DQN.png"/>
 
 - `dueling.png` - Episode 625, Average Score: 13.02, Environment solved in 525 episodes.
 
-![reward2][dueling.png]
+<img src="dueling.png"/>
