@@ -39,6 +39,8 @@ The barrier for solving the second version of the environment is slightly differ
 - This yields an average score for each episode (where the average is over all 20 agents).
 
 
+# Getting Started
+
 ### Step 1: Activate the Environment
 
 To set up your python environment to run the code in this repository, follow the instructions below.
@@ -134,7 +136,9 @@ After you have followed the instructions above, open `Continuous_Control.ipynb.i
 ```
 
 #### - Actor Network - Estimate the Optimal Action
-    - Deep Deterministic Policy Gradient:
+
+- Deep Deterministic Policy Gradient:
+    
     ```
     1. Fully Connected Layer with ReLu Activation Function = 33 -> 128
     2. Fully Connected Layer with ReLu Activation Function = 128 -> 128
@@ -143,7 +147,9 @@ After you have followed the instructions above, open `Continuous_Control.ipynb.i
     ```
 
 #### Critic Network - Evaluate the Value of Optimal Action
-    - Deep Deterministic Policy Gradient:
+
+- Deep Deterministic Policy Gradient:
+    
     ```
     1. Fully Connected Layer with ReLu Activation Function = 33 -> 64
     2. Concatnate the Actions and Output from Previous Layer = 64 + Actions
