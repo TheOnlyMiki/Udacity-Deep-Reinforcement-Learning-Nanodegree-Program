@@ -112,6 +112,6 @@ To set up your python environment to run the code in this repository, follow the
 
 6. Before running code in a notebook, change the kernel to match the `drlnd` environment by using the drop-down `Kernel` menu. 
 
-<img src="Course 2 - Value Based Methods/Project/images/kernel.png"/>
+<img src="2. Value Based Methods/Project/images/kernel.png"/>
 
 (For Windows users) The ML-Agents toolkit supports Windows 10. While it might be possible to run the ML-Agents toolkit using other versions of Windows, it has not been tested on other versions. Furthermore, the ML-Agents toolkit has not been tested on a Windows VM such as Bootcamp or Parallels.
