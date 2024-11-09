@@ -5,7 +5,7 @@ This is an amended version of the `python/` folder from the [ML-Agents repositor
 
 # Project Details
 
-### Unity ML-Agents Banana Navigation Environment
+### Unity ML-Agents Navigation Environment
 
 ![banana navigation](images/banana.gif)
 
