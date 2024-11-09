@@ -1,6 +1,6 @@
 # Udacity Deep Reinforcement Learning Nanodegree Program
 
-![Trained Agents][https://user-images.githubusercontent.com/10624937/42135602-b0335606-7d12-11e8-8689-dd1cf9fa11a9.gif]
+<img src="https://user-images.githubusercontent.com/10624937/42135602-b0335606-7d12-11e8-8689-dd1cf9fa11a9.gif" />
 
 The Deep Reinforcement Learning Nanodegree program is designed to enhance students’ existing machine learning and  deep learning skills with the addition of reinforcement learning theory and programming techniques. This program will grow  students’ deep learning and reinforcement learning expertise, give them the skills they need to understand the most recent  advancements in deep reinforcement learning, and build and implement their own algorithms.
 
@@ -112,6 +112,6 @@ To set up your python environment to run the code in this repository, follow the
 
 6. Before running code in a notebook, change the kernel to match the `drlnd` environment by using the drop-down `Kernel` menu. 
 
-<img src="images/kernel.png"/>
+<img src="Course 2 - Value Based Methods/Project/images/kernel.png"/>
 
 (For Windows users) The ML-Agents toolkit supports Windows 10. While it might be possible to run the ML-Agents toolkit using other versions of Windows, it has not been tested on other versions. Furthermore, the ML-Agents toolkit has not been tested on a Windows VM such as Bootcamp or Parallels.
